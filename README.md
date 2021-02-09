@@ -13,6 +13,7 @@ Aplicação de controle entrada e saída de saldo. Desenvolvido a partir da Mara
 
 ## Status
 - [x] Finalizado (08/02/2021)
+- [ ] Personalizar Layout (estrutura, cores, fontes, imagens, logo, animações)
 
 ## Links
 - [Rocketseat](https://app.rocketseat.com.br/)

@@ -228,7 +228,3 @@ const App = {
 }
 
 App.init()
-
-// Próximos passos: 
-// Pilotando com a DOM
-// Colocar o código final no GitHub
