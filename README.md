@@ -1,7 +1,7 @@
-<h1 align="center">DevFinance - Maratona Discover Rocketseat</h1>
+<h1 align="center">dev.finance$ - Maratona Discover Rocketseat</h1>
 
 ## Objetivo
-
+Aplicação de controle entrada e saída de saldo. Desenvolvido a partir da Maratona Discover da Rocketseat
 
 ## Exemplo do aplicativo
 [Clique aqui!](https://paulo-hst.github.io/maratona-discover/)
@@ -12,7 +12,7 @@
 - Java Script
 
 ## Status
-- [ ] Em Andamento ()
+- [x] Finalizado (08/02/2021)
 
 ## Links
 - [Rocketseat](https://app.rocketseat.com.br/)
