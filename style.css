@@ -11,6 +11,7 @@
     --green: #49aa26;
     --light-green: #3dd705;
     --red:  #e92929;
+    --light-blue : #61c0e2;
     --transition: background 0.2s ease-in-out; 
 }
 html{
@@ -18,7 +19,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: #bec9da;
+    background: #61c0e23b;
 }
 /* ~ Screen Reader - Acessibilidade */
 .sr-only{
@@ -31,7 +32,6 @@ body{
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-
 }
 
 .container{
@@ -118,14 +118,13 @@ button:hover{
 
 /* ~ Header */
 header{
-    background: #2d4a22;
+    background: var(--light-blue);
     padding: 2rem 0 10rem;
     text-align: center;
 }
 
-#logo{
-    color: #ffffff;
-    font-weight: 100;
+header img{
+    max-width: 220px;
 }
 
 /* ~ Balance */
@@ -145,6 +144,8 @@ header{
 
     margin-bottom: 2rem;
     color: var(--dark-blue);
+
+    box-shadow: 3px 3px 5px rgba(59, 59, 59, 0.212)
 }
 .card h3{
     font-weight: normal;
@@ -156,6 +157,7 @@ header{
 }
 
 .card p{
+    font-weight: 600;
     font-size: 2rem;
     line-height: 3rem;
 
@@ -169,7 +171,6 @@ header{
 .card:nth-child(2){
     background: #fff url(./assets/income.svg) no-repeat;
 }
-
 .card:nth-child(3){
     background: #fff url(./assets/expense.svg) no-repeat;
 }
@@ -227,6 +228,10 @@ table tbody tr{
     opacity: 0.7;
 }
 
+table thead th:last-child{
+    text-align: center;
+}
+
 table tbody tr:hover{
     opacity: 1;
 }
@@ -234,6 +239,10 @@ table tbody tr:hover{
 table tbody td{
     background: #ffffff;
     padding: 1rem 2rem;
+}
+
+table tbody td:last-child{
+    text-align: center;
 }
 
 td.description{
@@ -274,12 +283,14 @@ td.expense{
 }
 
 .modal{
-    background: #cfd0d1;
+    background: #aadcf1;
     padding: 2.4rem;
     width: 95%;
     border-radius: 0.2rem;
     position: relative;
     z-index: 1;
+
+    box-shadow: 3px 3px 15px rgb(59, 59, 59)
 
 }
 
@@ -321,11 +332,25 @@ td.expense{
 /* ~ Footer */
 footer{
     text-align: center;
-    padding: 4rem 0 2rem;
+    padding: 1.2rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
     
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
 }
+
+footer img{
+    max-width: 100px;
+    filter: invert(100%);
+}
+
+footer p{
+    font-size: 0.8rem;
+}
+
 
 /* ~ Responsive */
 @media (min-width: 800px){
