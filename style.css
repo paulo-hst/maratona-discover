@@ -148,6 +148,32 @@ header{
     color: #ffffff;
 }
 
+.card:nth-child(2){
+    background: #fff url(./assets/income.svg) no-repeat;
+}
+
+.card:nth-child(3){
+    background: #fff url(./assets/expense.svg) no-repeat;
+}
+.card:nth-child(4){
+    background: #fff url(./assets/total.svg) no-repeat;
+}
+
+.card:nth-child(2), .card:nth-child(3), .card:nth-child(4){
+    background-size: 53%;
+    background-position: 140%;
+    transition: background-size 0.2s ease-in;
+}
+
+.card:hover{
+    background-size: 58%;
+    transition: background-size 0.2s ease-in;
+}
+
+.card img{
+    visibility: hidden;
+}
+
 /* ~ Transações */
 #transactions{
     display: block;
@@ -297,4 +323,16 @@ footer{
     .modal{
         width: 500px;    
     }
+    
+}
+@media (max-width: 800px){
+    .card:nth-child(2), .card:nth-child(3), .card:nth-child(4){
+        background-size: 15%;
+        background-position: 97%;
+    }
+    .card:hover{
+        background-size: 25%;        
+        transition: background-size 0.2s ease-in;
+    }
+    
 }
