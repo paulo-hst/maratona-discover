@@ -13,7 +13,11 @@ Aplicação de controle entrada e saída de saldo. Desenvolvido a partir da Mara
 
 ## Status
 - [x] Finalizado (08/02/2021)
-- [ ] Personalizar Layout (estrutura, cores, fontes, imagens, logo, animações)
+- [ ] Cores
+- [ ] Alterar cor de acordo com o saldo positivo / negativo
+- [ ] Imagem de fundo
+- [ ] Alterar Logo / footer
+- [ ] Alterar imagem dos cards (imagem como background full)
 
 ## Links
 - [Rocketseat](https://app.rocketseat.com.br/)

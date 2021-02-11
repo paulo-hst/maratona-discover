@@ -100,9 +100,13 @@ const DOM = {
         document
             .getElementById('expenseDisplay')
             .innerHTML = Utils.formatCurrency(Transaction.expenses())
+
+
         document
             .getElementById('totalDisplay')
             .innerHTML = Utils.formatCurrency(Transaction.total())
+
+         Utils.totalColor()
     },
 
     clearTransactions(){
@@ -112,6 +116,14 @@ const DOM = {
 
 const Utils = {
 
+    totalColor(){
+        let totalValueDisplay = document.getElementById('totalDisplay').innerHTML
+        let backgroundValue = document.querySelector('.total')
+
+        totalValueDisplay[0] === '-'
+         ? backgroundValue.style.backgroundColor = '#e92929'
+         : backgroundValue.style.backgroundColor = '#49aa26'
+    },
 
     formatAmount(value){
         value = Number(value) * 100
