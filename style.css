@@ -34,6 +34,10 @@ body{
     border-width: 0;
 }
 
+header, main, footer{    
+    visibility: hidden;
+}
+
 .container{
     width: min(90vw, 800px); /* Viewport Width. min(opção 1 ou opção 2) */
     margin: auto;
@@ -329,6 +333,65 @@ td.expense{
 .input-group.actions button{
     width: 48%;
 }
+
+
+#welcome{
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    visibility: visible;
+    
+    z-index: 999;
+    text-align: center;
+}
+
+#welcome-main{
+    width: 70%;
+    padding: 20px;
+    
+    
+    background: var(--light-blue);
+    border-radius: 0.25rem;
+
+    margin-bottom: 2rem;
+
+    box-shadow: 3px 3px 5px rgba(59, 59, 59, 0.212)
+}
+
+#welcome-main img{
+    width: 100%;
+    padding: 0 50px;
+}
+
+#welcome-main button{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin-top: 15px;
+
+    border-radius: 120px;
+
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#welcome-main p{
+    font-weight: 200;
+    color: white;
+    font-size: 0.8rem;
+}
+
+
 /* ~ Footer */
 footer{
     text-align: center;
@@ -365,6 +428,10 @@ footer p{
     }
     .modal{
         width: 500px;    
+    }
+
+    #welcome-main p{
+        font-size: 1.1rem;
     }
     
 }
