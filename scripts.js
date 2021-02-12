@@ -26,18 +26,16 @@ const Welcome = {
             .add('active')        
     },
     close(){
-        setTimeout(() => {
-            Modal.open()
-    
-            document
-                .querySelector('.wrapper')
-                .classList
-                .remove('active')
-            document
-                .querySelector('.welcome')
-                .classList
-                .remove('active')
-        }, 300)
+        Modal.open()
+
+        document
+            .querySelector('.wrapper')
+            .classList
+            .remove('active')
+        document
+            .querySelector('.welcome')
+            .classList
+            .remove('active')
     }
 }
 

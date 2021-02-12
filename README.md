@@ -12,13 +12,8 @@ Aplicação de controle entrada e saída de saldo. Desenvolvido a partir da Mara
 - Java Script
 
 ## Status
-- [x] Finalizado (08/02/2021)
-- [x] Cores
-- [x] Alterar cor de acordo com o saldo positivo / negativo
-- [x] Imagem de fundo
-- [x] Alterar Logo / footer
-- [x] Alterar imagem dos cards (imagem como background full)
-- [x] Adicionar logo / botão de nova transação quando não existir transações no app
+- [x] Finalizado layout da maratona (08/02/2021)
+- [x] Finalizado novo layout (11/02/2021)
 
 ## Links
 - [Rocketseat](https://app.rocketseat.com.br/)
