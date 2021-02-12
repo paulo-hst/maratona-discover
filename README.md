@@ -18,6 +18,7 @@ Aplicação de controle entrada e saída de saldo. Desenvolvido a partir da Mara
 - [x] Imagem de fundo
 - [x] Alterar Logo / footer
 - [x] Alterar imagem dos cards (imagem como background full)
+- [x] Adicionar logo / botão de nova transação quando não existir transações no app
 
 ## Links
 - [Rocketseat](https://app.rocketseat.com.br/)

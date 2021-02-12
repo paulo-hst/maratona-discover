@@ -14,6 +14,33 @@ const Modal = {
     }
 }
 
+const Welcome = {
+    open(){
+        document
+            .querySelector('.wrapper')
+            .classList
+            .add('active')
+        document
+            .querySelector('.welcome')
+            .classList
+            .add('active')        
+    },
+    close(){
+        setTimeout(() => {
+            Modal.open()
+    
+            document
+                .querySelector('.wrapper')
+                .classList
+                .remove('active')
+            document
+                .querySelector('.welcome')
+                .classList
+                .remove('active')
+        }, 300)
+    }
+}
+
 // ~ Armazenamento no Local Storage
 const Storage = {
     get(){
@@ -28,7 +55,6 @@ const Transaction = {
     all: Storage.get(),
 
     add(transaction){
-
         Transaction.all.push(transaction)
         App.reload()
     },
@@ -217,11 +243,12 @@ const Form = {
         }
     }
 }
-
 // ~ Iniciar aplicativo
 const App = {
     init(){
         
+        Transaction.all == '' ? Welcome.open() : console.log('Não fazer nada'),
+
         // ou Transaction.all.forEach(DOM.addTransaction)
         Transaction.all.forEach((transaction, index) => {
             DOM.addTransaction(transaction, index)
